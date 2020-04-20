@@ -346,6 +346,6 @@ class QGraphicsScene(QGraphicsScene):
 
 if __name__=="__main__":
     app = QApplication(sys.argv)
-    w = GraphicsRectItem()
+    w = Main()
     w.show()
     sys.exit(app.exec_())
