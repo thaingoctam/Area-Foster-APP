@@ -291,7 +291,7 @@ class GraphicsRectItem(QGraphicsRectItem):  # class QGraphicsRectItem for draw r
             self.update()
             print("bottom",boundingRect.bottom())
             self.scene().update()
-
+            print("bac")
         elif self.handleSelected == self.handleBottomRight:
 
             fromZ = mousePos.x() - self.mousePressPos.x()
@@ -342,9 +342,10 @@ class GraphicsRectItem(QGraphicsRectItem):  # class QGraphicsRectItem for draw r
 
 class QGraphicsScene(QGraphicsScene):
     entered = pyqtSignal()
+    
 
 if __name__=="__main__":
     app = QApplication(sys.argv)
-    w = main()
+    w = GraphicsRectItem()
     w.show()
     sys.exit(app.exec_())
